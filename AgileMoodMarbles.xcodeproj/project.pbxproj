@@ -7,23 +7,47 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		591767179FE8E6F3C85D6CF9 /* Pods_AgileMoodMarbles.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4748450262DB0890FD7A2E39 /* Pods_AgileMoodMarbles.framework */; };
 		91E3987F1FA709BB0032E4CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E3987E1FA709BB0032E4CE /* AppDelegate.swift */; };
-		91E398811FA709BB0032E4CE /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E398801FA709BB0032E4CE /* FirstViewController.swift */; };
-		91E398831FA709BB0032E4CE /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E398821FA709BB0032E4CE /* SecondViewController.swift */; };
 		91E398861FA709BB0032E4CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91E398841FA709BB0032E4CE /* Main.storyboard */; };
 		91E398881FA709BB0032E4CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91E398871FA709BB0032E4CE /* Assets.xcassets */; };
 		91E3988B1FA709BB0032E4CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91E398891FA709BB0032E4CE /* LaunchScreen.storyboard */; };
+		91E398981FA70A290032E4CE /* TabBarConfigurationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E398921FA70A290032E4CE /* TabBarConfigurationViewController.swift */; };
+		91E398991FA70A290032E4CE /* CommentsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E398931FA70A290032E4CE /* CommentsTableViewController.swift */; };
+		91E3989A1FA70A290032E4CE /* MoodsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E398941FA70A290032E4CE /* MoodsViewController.swift */; };
+		91E3989B1FA70A290032E4CE /* MyButtonsLayouts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E398951FA70A290032E4CE /* MyButtonsLayouts.swift */; };
+		91E3989C1FA70A290032E4CE /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E398961FA70A290032E4CE /* SettingsViewController.swift */; };
+		91E3989D1FA70A290032E4CE /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E398971FA70A290032E4CE /* CustomTableViewCell.swift */; };
+		91E398A11FA70C080032E4CE /* green_smiley.png in Resources */ = {isa = PBXBuildFile; fileRef = 91E3989E1FA70C070032E4CE /* green_smiley.png */; };
+		91E398A21FA70C080032E4CE /* red_smiley.png in Resources */ = {isa = PBXBuildFile; fileRef = 91E3989F1FA70C080032E4CE /* red_smiley.png */; };
+		91E398A31FA70C080032E4CE /* yellow_smiley.png in Resources */ = {isa = PBXBuildFile; fileRef = 91E398A01FA70C080032E4CE /* yellow_smiley.png */; };
+		91E398A51FA70C460032E4CE /* moodmarbles.png in Resources */ = {isa = PBXBuildFile; fileRef = 91E398A41FA70C450032E4CE /* moodmarbles.png */; };
+		91E398A91FA724CB0032E4CE /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E398A81FA724CB0032E4CE /* ChartViewController.swift */; };
+		91E398AA1FA75C040032E4CE /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91E398AB1FA75C040032E4CE /* Charts.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4748450262DB0890FD7A2E39 /* Pods_AgileMoodMarbles.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AgileMoodMarbles.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		49168936314143D14561DA62 /* Pods-AgileMoodMarbles.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AgileMoodMarbles.release.xcconfig"; path = "Pods/Target Support Files/Pods-AgileMoodMarbles/Pods-AgileMoodMarbles.release.xcconfig"; sourceTree = "<group>"; };
 		91E3987B1FA709BB0032E4CE /* AgileMoodMarbles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AgileMoodMarbles.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91E3987E1FA709BB0032E4CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		91E398801FA709BB0032E4CE /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		91E398821FA709BB0032E4CE /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		91E398851FA709BB0032E4CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		91E398871FA709BB0032E4CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		91E3988A1FA709BB0032E4CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		91E3988C1FA709BB0032E4CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91E398921FA70A290032E4CE /* TabBarConfigurationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarConfigurationViewController.swift; sourceTree = "<group>"; };
+		91E398931FA70A290032E4CE /* CommentsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentsTableViewController.swift; sourceTree = "<group>"; };
+		91E398941FA70A290032E4CE /* MoodsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoodsViewController.swift; sourceTree = "<group>"; };
+		91E398951FA70A290032E4CE /* MyButtonsLayouts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyButtonsLayouts.swift; sourceTree = "<group>"; };
+		91E398961FA70A290032E4CE /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		91E398971FA70A290032E4CE /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		91E3989E1FA70C070032E4CE /* green_smiley.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = green_smiley.png; sourceTree = "<group>"; };
+		91E3989F1FA70C080032E4CE /* red_smiley.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = red_smiley.png; sourceTree = "<group>"; };
+		91E398A01FA70C080032E4CE /* yellow_smiley.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yellow_smiley.png; sourceTree = "<group>"; };
+		91E398A41FA70C450032E4CE /* moodmarbles.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = moodmarbles.png; sourceTree = "<group>"; };
+		91E398A81FA724CB0032E4CE /* ChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
+		91E398AB1FA75C040032E4CE /* Charts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Charts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC20AFD3FFF5847A5E6C9B56 /* Pods-AgileMoodMarbles.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AgileMoodMarbles.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AgileMoodMarbles/Pods-AgileMoodMarbles.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +55,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91E398AA1FA75C040032E4CE /* Charts.framework in Frameworks */,
+				591767179FE8E6F3C85D6CF9 /* Pods_AgileMoodMarbles.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +68,12 @@
 			children = (
 				91E3987D1FA709BB0032E4CE /* AgileMoodMarbles */,
 				91E3987C1FA709BB0032E4CE /* Products */,
+				91E3989E1FA70C070032E4CE /* green_smiley.png */,
+				91E3989F1FA70C080032E4CE /* red_smiley.png */,
+				91E398A01FA70C080032E4CE /* yellow_smiley.png */,
+				91E398A41FA70C450032E4CE /* moodmarbles.png */,
+				995E6E5A3EA3093890FD0138 /* Pods */,
+				C07E6E7659163CCBDACFA197 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +88,38 @@
 		91E3987D1FA709BB0032E4CE /* AgileMoodMarbles */ = {
 			isa = PBXGroup;
 			children = (
-				91E3987E1FA709BB0032E4CE /* AppDelegate.swift */,
-				91E398801FA709BB0032E4CE /* FirstViewController.swift */,
-				91E398821FA709BB0032E4CE /* SecondViewController.swift */,
-				91E398841FA709BB0032E4CE /* Main.storyboard */,
-				91E398871FA709BB0032E4CE /* Assets.xcassets */,
 				91E398891FA709BB0032E4CE /* LaunchScreen.storyboard */,
+				91E3987E1FA709BB0032E4CE /* AppDelegate.swift */,
+				91E398841FA709BB0032E4CE /* Main.storyboard */,
+				91E398941FA70A290032E4CE /* MoodsViewController.swift */,
+				91E398931FA70A290032E4CE /* CommentsTableViewController.swift */,
+				91E398A81FA724CB0032E4CE /* ChartViewController.swift */,
+				91E398961FA70A290032E4CE /* SettingsViewController.swift */,
+				91E398971FA70A290032E4CE /* CustomTableViewCell.swift */,
+				91E398921FA70A290032E4CE /* TabBarConfigurationViewController.swift */,
+				91E398951FA70A290032E4CE /* MyButtonsLayouts.swift */,
+				91E398871FA709BB0032E4CE /* Assets.xcassets */,
 				91E3988C1FA709BB0032E4CE /* Info.plist */,
 			);
 			path = AgileMoodMarbles;
+			sourceTree = "<group>";
+		};
+		995E6E5A3EA3093890FD0138 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FC20AFD3FFF5847A5E6C9B56 /* Pods-AgileMoodMarbles.debug.xcconfig */,
+				49168936314143D14561DA62 /* Pods-AgileMoodMarbles.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C07E6E7659163CCBDACFA197 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				91E398AB1FA75C040032E4CE /* Charts.framework */,
+				4748450262DB0890FD7A2E39 /* Pods_AgileMoodMarbles.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +129,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 91E3988F1FA709BB0032E4CE /* Build configuration list for PBXNativeTarget "AgileMoodMarbles" */;
 			buildPhases = (
+				1D34A0CD77FF982DB1F8EF5F /* [CP] Check Pods Manifest.lock */,
 				91E398771FA709BB0032E4CE /* Sources */,
 				91E398781FA709BB0032E4CE /* Frameworks */,
 				91E398791FA709BB0032E4CE /* Resources */,
+				2E64AEF0CC750CA12AF80BE3 /* [CP] Embed Pods Frameworks */,
+				C70549CD8ED58D0799B444E3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -127,21 +185,84 @@
 			buildActionMask = 2147483647;
 			files = (
 				91E3988B1FA709BB0032E4CE /* LaunchScreen.storyboard in Resources */,
+				91E398A51FA70C460032E4CE /* moodmarbles.png in Resources */,
+				91E398A21FA70C080032E4CE /* red_smiley.png in Resources */,
+				91E398A31FA70C080032E4CE /* yellow_smiley.png in Resources */,
 				91E398881FA709BB0032E4CE /* Assets.xcassets in Resources */,
+				91E398A11FA70C080032E4CE /* green_smiley.png in Resources */,
 				91E398861FA709BB0032E4CE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1D34A0CD77FF982DB1F8EF5F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AgileMoodMarbles-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2E64AEF0CC750CA12AF80BE3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AgileMoodMarbles/Pods-AgileMoodMarbles-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AgileMoodMarbles/Pods-AgileMoodMarbles-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C70549CD8ED58D0799B444E3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AgileMoodMarbles/Pods-AgileMoodMarbles-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		91E398771FA709BB0032E4CE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				91E398831FA709BB0032E4CE /* SecondViewController.swift in Sources */,
+				91E3989D1FA70A290032E4CE /* CustomTableViewCell.swift in Sources */,
+				91E398991FA70A290032E4CE /* CommentsTableViewController.swift in Sources */,
+				91E3989B1FA70A290032E4CE /* MyButtonsLayouts.swift in Sources */,
+				91E398981FA70A290032E4CE /* TabBarConfigurationViewController.swift in Sources */,
+				91E398A91FA724CB0032E4CE /* ChartViewController.swift in Sources */,
+				91E3989A1FA70A290032E4CE /* MoodsViewController.swift in Sources */,
 				91E3987F1FA709BB0032E4CE /* AppDelegate.swift in Sources */,
-				91E398811FA709BB0032E4CE /* FirstViewController.swift in Sources */,
+				91E3989C1FA70A290032E4CE /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +397,7 @@
 		};
 		91E398901FA709BB0032E4CE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC20AFD3FFF5847A5E6C9B56 /* Pods-AgileMoodMarbles.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -290,6 +412,7 @@
 		};
 		91E398911FA709BB0032E4CE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49168936314143D14561DA62 /* Pods-AgileMoodMarbles.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
