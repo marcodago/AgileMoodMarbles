@@ -8,8 +8,7 @@
 
 import UIKit
 
-@IBDesignable
-class MyButtonsLayouts: UIButton {
+@IBDesignable class MyButtonsLayouts: UIButton {
     
     @IBInspectable var radius: CGFloat {
         

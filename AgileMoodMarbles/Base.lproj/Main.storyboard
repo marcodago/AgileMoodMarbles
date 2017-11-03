@@ -29,7 +29,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D7H-gI-Laf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="30" y="-171"/>
+            <point key="canvasLocation" x="30" y="-192"/>
         </scene>
         <!--SetMood-->
         <scene sceneID="hsH-gs-nQo">
@@ -98,7 +98,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g2e-xM-ASu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-416.5" y="682.5"/>
+            <point key="canvasLocation" x="-710" y="588"/>
         </scene>
         <!--CommentsTable-->
         <scene sceneID="lW1-Eb-iMU">
@@ -149,12 +149,12 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eVx-oe-0B5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="30" y="1486"/>
+            <point key="canvasLocation" x="30" y="1320"/>
         </scene>
         <!--Metrics-->
         <scene sceneID="OxA-9a-OvT">
             <objects>
-                <viewController id="I23-GP-DCt" userLabel="Metrics" customClass="ChartViewController" customModule="AgileMoodMarbles" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="I23-GP-DCt" userLabel="Metrics" customClass="ChartViewController" customModule="AgileMoodMarbles" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="trw-Kp-9go">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -178,7 +178,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IcI-x3-nmg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="487" y="683"/>
+            <point key="canvasLocation" x="742" y="588"/>
         </scene>
         <!--Settings-->
         <scene sceneID="rCK-qI-Fhd">
@@ -270,7 +270,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q4i-bH-YAV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="487" y="-172"/>
+            <point key="canvasLocation" x="742" y="-192"/>
         </scene>
         <!--Navigation-->
         <scene sceneID="fRu-Je-wx4">
@@ -286,7 +286,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FEV-Y5-2Fu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="30" y="683"/>
+            <point key="canvasLocation" x="30" y="588"/>
         </scene>
     </scenes>
     <resources>
