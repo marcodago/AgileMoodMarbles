@@ -43,6 +43,7 @@ class ChartViewController: UIViewController {
             
             pieChartView = PieChartView(frame: self.view.bounds)
             self.view.addSubview(pieChartView!)
+            
             setChart(dataPoints: moods, values: percentage)
         }
         
