@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		591767179FE8E6F3C85D6CF9 /* Pods_AgileMoodMarbles.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4748450262DB0890FD7A2E39 /* Pods_AgileMoodMarbles.framework */; };
+		91545C771FBD81AF00252A07 /* Caliber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91545C761FBD81AF00252A07 /* Caliber.swift */; };
 		91E3987F1FA709BB0032E4CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E3987E1FA709BB0032E4CE /* AppDelegate.swift */; };
 		91E398861FA709BB0032E4CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91E398841FA709BB0032E4CE /* Main.storyboard */; };
 		91E398881FA709BB0032E4CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91E398871FA709BB0032E4CE /* Assets.xcassets */; };
@@ -29,6 +30,7 @@
 /* Begin PBXFileReference section */
 		4748450262DB0890FD7A2E39 /* Pods_AgileMoodMarbles.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AgileMoodMarbles.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		49168936314143D14561DA62 /* Pods-AgileMoodMarbles.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AgileMoodMarbles.release.xcconfig"; path = "Pods/Target Support Files/Pods-AgileMoodMarbles/Pods-AgileMoodMarbles.release.xcconfig"; sourceTree = "<group>"; };
+		91545C761FBD81AF00252A07 /* Caliber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Caliber.swift; sourceTree = "<group>"; };
 		91E3987B1FA709BB0032E4CE /* AgileMoodMarbles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AgileMoodMarbles.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91E3987E1FA709BB0032E4CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		91E398851FA709BB0032E4CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -88,18 +90,19 @@
 		91E3987D1FA709BB0032E4CE /* AgileMoodMarbles */ = {
 			isa = PBXGroup;
 			children = (
-				91E398891FA709BB0032E4CE /* LaunchScreen.storyboard */,
-				91E3987E1FA709BB0032E4CE /* AppDelegate.swift */,
-				91E398841FA709BB0032E4CE /* Main.storyboard */,
-				91E398941FA70A290032E4CE /* MoodsViewController.swift */,
-				91E398931FA70A290032E4CE /* CommentsTableViewController.swift */,
-				91E398A81FA724CB0032E4CE /* ChartViewController.swift */,
-				91E398961FA70A290032E4CE /* SettingsViewController.swift */,
-				91E398971FA70A290032E4CE /* CustomTableViewCell.swift */,
-				91E398921FA70A290032E4CE /* TabBarConfigurationViewController.swift */,
-				91E398951FA70A290032E4CE /* MyButtonsLayouts.swift */,
-				91E398871FA709BB0032E4CE /* Assets.xcassets */,
 				91E3988C1FA709BB0032E4CE /* Info.plist */,
+				91E398891FA709BB0032E4CE /* LaunchScreen.storyboard */,
+				91E398841FA709BB0032E4CE /* Main.storyboard */,
+				91E3987E1FA709BB0032E4CE /* AppDelegate.swift */,
+				91545C761FBD81AF00252A07 /* Caliber.swift */,
+				91E398A81FA724CB0032E4CE /* ChartViewController.swift */,
+				91E398931FA70A290032E4CE /* CommentsTableViewController.swift */,
+				91E398971FA70A290032E4CE /* CustomTableViewCell.swift */,
+				91E398941FA70A290032E4CE /* MoodsViewController.swift */,
+				91E398951FA70A290032E4CE /* MyButtonsLayouts.swift */,
+				91E398961FA70A290032E4CE /* SettingsViewController.swift */,
+				91E398921FA70A290032E4CE /* TabBarConfigurationViewController.swift */,
+				91E398871FA709BB0032E4CE /* Assets.xcassets */,
 			);
 			path = AgileMoodMarbles;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 				91E3989B1FA70A290032E4CE /* MyButtonsLayouts.swift in Sources */,
 				91E398981FA70A290032E4CE /* TabBarConfigurationViewController.swift in Sources */,
 				91E398A91FA724CB0032E4CE /* ChartViewController.swift in Sources */,
+				91545C771FBD81AF00252A07 /* Caliber.swift in Sources */,
 				91E3989A1FA70A290032E4CE /* MoodsViewController.swift in Sources */,
 				91E3987F1FA709BB0032E4CE /* AppDelegate.swift in Sources */,
 				91E3989C1FA70A290032E4CE /* SettingsViewController.swift in Sources */,
