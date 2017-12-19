@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		591767179FE8E6F3C85D6CF9 /* Pods_AgileMoodMarbles.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4748450262DB0890FD7A2E39 /* Pods_AgileMoodMarbles.framework */; };
+		3D670F1717825E7F27E9A7E6 /* Pods_AgileMoodMarbles.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC74F064D5F74D6F40151A63 /* Pods_AgileMoodMarbles.framework */; };
 		91545C771FBD81AF00252A07 /* Caliber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91545C761FBD81AF00252A07 /* Caliber.swift */; };
 		91E3987F1FA709BB0032E4CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E3987E1FA709BB0032E4CE /* AppDelegate.swift */; };
 		91E398861FA709BB0032E4CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91E398841FA709BB0032E4CE /* Main.storyboard */; };
@@ -24,11 +24,22 @@
 		91E398A31FA70C080032E4CE /* yellow_smiley.png in Resources */ = {isa = PBXBuildFile; fileRef = 91E398A01FA70C080032E4CE /* yellow_smiley.png */; };
 		91E398A51FA70C460032E4CE /* moodmarbles.png in Resources */ = {isa = PBXBuildFile; fileRef = 91E398A41FA70C450032E4CE /* moodmarbles.png */; };
 		91E398A91FA724CB0032E4CE /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E398A81FA724CB0032E4CE /* ChartViewController.swift */; };
-		91E398AA1FA75C040032E4CE /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91E398AB1FA75C040032E4CE /* Charts.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		914F0C3F1FCEEFA00082B1CD /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		4748450262DB0890FD7A2E39 /* Pods_AgileMoodMarbles.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AgileMoodMarbles.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		49168936314143D14561DA62 /* Pods-AgileMoodMarbles.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AgileMoodMarbles.release.xcconfig"; path = "Pods/Target Support Files/Pods-AgileMoodMarbles/Pods-AgileMoodMarbles.release.xcconfig"; sourceTree = "<group>"; };
 		91545C761FBD81AF00252A07 /* Caliber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Caliber.swift; sourceTree = "<group>"; };
 		91E3987B1FA709BB0032E4CE /* AgileMoodMarbles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AgileMoodMarbles.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,7 +59,7 @@
 		91E398A01FA70C080032E4CE /* yellow_smiley.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yellow_smiley.png; sourceTree = "<group>"; };
 		91E398A41FA70C450032E4CE /* moodmarbles.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = moodmarbles.png; sourceTree = "<group>"; };
 		91E398A81FA724CB0032E4CE /* ChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
-		91E398AB1FA75C040032E4CE /* Charts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Charts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC74F064D5F74D6F40151A63 /* Pods_AgileMoodMarbles.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AgileMoodMarbles.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC20AFD3FFF5847A5E6C9B56 /* Pods-AgileMoodMarbles.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AgileMoodMarbles.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AgileMoodMarbles/Pods-AgileMoodMarbles.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -57,8 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				91E398AA1FA75C040032E4CE /* Charts.framework in Frameworks */,
-				591767179FE8E6F3C85D6CF9 /* Pods_AgileMoodMarbles.framework in Frameworks */,
+				3D670F1717825E7F27E9A7E6 /* Pods_AgileMoodMarbles.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,8 +129,7 @@
 		C07E6E7659163CCBDACFA197 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				91E398AB1FA75C040032E4CE /* Charts.framework */,
-				4748450262DB0890FD7A2E39 /* Pods_AgileMoodMarbles.framework */,
+				AC74F064D5F74D6F40151A63 /* Pods_AgileMoodMarbles.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -138,6 +147,7 @@
 				91E398791FA709BB0032E4CE /* Resources */,
 				2E64AEF0CC750CA12AF80BE3 /* [CP] Embed Pods Frameworks */,
 				C70549CD8ED58D0799B444E3 /* [CP] Copy Pods Resources */,
+				914F0C3F1FCEEFA00082B1CD /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -413,6 +423,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = AgileMoodMarbles/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -431,6 +445,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = AgileMoodMarbles/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

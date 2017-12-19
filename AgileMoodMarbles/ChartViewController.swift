@@ -12,14 +12,13 @@ import Charts
 class ChartViewController: UIViewController {
     
     var pieChartView: PieChartView!
-    
-    var marble: [String] = []
-    var date: [String] = []
-    var jsonArray: [String] = []
     var GREEN: Double = 0.00
     var YELLOW: Double = 0.00
     var RED: Double = 0.00
     var TOTAL: Double = 0.00
+    var marble: [String] = []
+    var date: [String] = []
+    var jsonArray: [String] = []
     var country = String()
     var dept = String ()
     
@@ -50,7 +49,12 @@ class ChartViewController: UIViewController {
     }
     
     func GetJSONfromCloudantDB () {
-        
+/*
+        var GREEN: Double = 0.00
+        var YELLOW: Double = 0.00
+        var RED: Double = 0.00
+        var TOTAL: Double = 0.00
+*/
         let postEndpoint: String = ("https://0887ad8a-8f0b-4aec-b8fc-bf66958c007a-bluemix:b044033ceb27472f0c349ac201473b760f3e3f1f360d19209f37e860118ff9bd@0887ad8a-8f0b-4aec-b8fc-bf66958c007a-bluemix.cloudant.com/comments/_all_docs?include_docs=true")
         
         let url = NSURL(string: postEndpoint)!
