@@ -9,46 +9,14 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "AgileMoodMarbles/ChartViewController.swift"
-            timestampString = "533659053.875888"
+            filePath = "AgileMoodMarbles/SettingsViewController.swift"
+            timestampString = "554365951.949723"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "122"
-            endingLineNumber = "122"
-            landmarkName = "GetJSONfromCloudantDB()"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "saveSettings(_:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "AgileMoodMarbles.ChartViewController.GetJSONfromCloudantDB() -&gt; ()"
-                  moduleName = "AgileMoodMarbles"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/marcodago/Desktop/AgileMoodMarbles/AgileMoodMarbles/ChartViewController.swift"
-                  timestampString = "533656799.211233"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "122"
-                  endingLineNumber = "122"
-                  offsetFromSymbolStart = "19870">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "AgileMoodMarbles.ChartViewController.GetJSONfromCloudantDB() -&gt; ()"
-                  moduleName = "AgileMoodMarbles"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/marcodago/Desktop/AgileMoodMarbles/AgileMoodMarbles/ChartViewController.swift"
-                  timestampString = "533656799.21295"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "122"
-                  endingLineNumber = "122"
-                  offsetFromSymbolStart = "20093">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

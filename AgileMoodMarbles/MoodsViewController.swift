@@ -59,8 +59,8 @@ class MoodsViewController: UIViewController {
             
             alert -> Void in
             
-            let firstTextField = alertController.textFields![0] as UITextField!
-            let secondTextField = alertController.textFields![0] as UITextField!
+            let firstTextField = alertController.textFields![0] as UITextField?
+            let secondTextField = alertController.textFields![0] as UITextField?
             
             var allComments: [String] = []
             var allIconsComments: [String] = []

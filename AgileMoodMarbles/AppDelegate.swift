@@ -24,7 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             let topWindow = UIWindow(frame: UIScreen.main.bounds)
             topWindow.rootViewController = UIViewController()
             topWindow.windowLevel = UIWindowLevelAlert + 1
-            let alert = UIAlertController(title: "Please profile you!", message: "Please in order to use the application, go to the settings page and setup your profile. Thanks!", preferredStyle: .alert)
+            let alert = UIAlertController(title: "Profile is needed!", message: "To use this application, go to the settings page and setup your profile. Thanks!", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "confirm"), style: .cancel, handler: {(_ action: UIAlertAction) -> Void in
                 
                 topWindow.isHidden = true
