@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Charts.framework">
+   </FileRef>
+   <FileRef
       location = "group:AgileMoodMarbles.xcodeproj">
    </FileRef>
    <FileRef
