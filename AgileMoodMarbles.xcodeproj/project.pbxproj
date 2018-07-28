@@ -7,13 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		914FD10A210B2983008F779F /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 914FD109210B2983008F779F /* Charts.framework */; };
-		914FD10C210B298C008F779F /* Pods_AgileMoodMarbles.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 914FD10B210B298C008F779F /* Pods_AgileMoodMarbles.framework */; };
-		914FD10E210B29BD008F779F /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 914FD10D210B29BD008F779F /* Charts.framework */; };
-		914FD10F210B29BD008F779F /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 914FD10D210B29BD008F779F /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		914FD111210B29CA008F779F /* Pods_AgileMoodMarbles.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 914FD110210B29CA008F779F /* Pods_AgileMoodMarbles.framework */; };
-		914FD112210B29CA008F779F /* Pods_AgileMoodMarbles.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 914FD110210B29CA008F779F /* Pods_AgileMoodMarbles.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		91545C771FBD81AF00252A07 /* Caliber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91545C761FBD81AF00252A07 /* Caliber.swift */; };
+		916175F3210CF5E400A0FA25 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 916175F2210CF5E400A0FA25 /* Charts.framework */; };
+		916175F4210CF5E400A0FA25 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 916175F2210CF5E400A0FA25 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		916175F6210CF5ED00A0FA25 /* Pods_AgileMoodMarbles.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 916175F5210CF5ED00A0FA25 /* Pods_AgileMoodMarbles.framework */; };
+		916175F7210CF5ED00A0FA25 /* Pods_AgileMoodMarbles.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 916175F5210CF5ED00A0FA25 /* Pods_AgileMoodMarbles.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		91E3987F1FA709BB0032E4CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E3987E1FA709BB0032E4CE /* AppDelegate.swift */; };
 		91E398861FA709BB0032E4CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91E398841FA709BB0032E4CE /* Main.storyboard */; };
 		91E398881FA709BB0032E4CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91E398871FA709BB0032E4CE /* Assets.xcassets */; };
@@ -38,8 +36,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				914FD10F210B29BD008F779F /* Charts.framework in Embed Frameworks */,
-				914FD112210B29CA008F779F /* Pods_AgileMoodMarbles.framework in Embed Frameworks */,
+				916175F4210CF5E400A0FA25 /* Charts.framework in Embed Frameworks */,
+				916175F7210CF5ED00A0FA25 /* Pods_AgileMoodMarbles.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -48,11 +46,9 @@
 
 /* Begin PBXFileReference section */
 		49168936314143D14561DA62 /* Pods-AgileMoodMarbles.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AgileMoodMarbles.release.xcconfig"; path = "Pods/Target Support Files/Pods-AgileMoodMarbles/Pods-AgileMoodMarbles.release.xcconfig"; sourceTree = "<group>"; };
-		914FD109210B2983008F779F /* Charts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Charts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		914FD10B210B298C008F779F /* Pods_AgileMoodMarbles.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_AgileMoodMarbles.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		914FD10D210B29BD008F779F /* Charts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Charts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		914FD110210B29CA008F779F /* Pods_AgileMoodMarbles.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_AgileMoodMarbles.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		91545C761FBD81AF00252A07 /* Caliber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Caliber.swift; sourceTree = "<group>"; };
+		916175F2210CF5E400A0FA25 /* Charts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Charts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		916175F5210CF5ED00A0FA25 /* Pods_AgileMoodMarbles.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_AgileMoodMarbles.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		91E3987B1FA709BB0032E4CE /* AgileMoodMarbles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AgileMoodMarbles.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91E3987E1FA709BB0032E4CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		91E398851FA709BB0032E4CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -78,10 +74,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				914FD10E210B29BD008F779F /* Charts.framework in Frameworks */,
-				914FD10C210B298C008F779F /* Pods_AgileMoodMarbles.framework in Frameworks */,
-				914FD10A210B2983008F779F /* Charts.framework in Frameworks */,
-				914FD111210B29CA008F779F /* Pods_AgileMoodMarbles.framework in Frameworks */,
+				916175F3210CF5E400A0FA25 /* Charts.framework in Frameworks */,
+				916175F6210CF5ED00A0FA25 /* Pods_AgileMoodMarbles.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,8 +85,8 @@
 		91E398721FA709BB0032E4CE = {
 			isa = PBXGroup;
 			children = (
-				914FD110210B29CA008F779F /* Pods_AgileMoodMarbles.framework */,
-				914FD10D210B29BD008F779F /* Charts.framework */,
+				916175F5210CF5ED00A0FA25 /* Pods_AgileMoodMarbles.framework */,
+				916175F2210CF5E400A0FA25 /* Charts.framework */,
 				91E3987D1FA709BB0032E4CE /* AgileMoodMarbles */,
 				91E3987C1FA709BB0032E4CE /* Products */,
 				91E3989E1FA70C070032E4CE /* green_smiley.png */,
@@ -144,8 +138,6 @@
 		C07E6E7659163CCBDACFA197 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				914FD10B210B298C008F779F /* Pods_AgileMoodMarbles.framework */,
-				914FD109210B2983008F779F /* Charts.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

@@ -4,29 +4,18 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Charts.xcscheme</key>
+		<key>Charts.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>isShown</key>
 			<true/>
 		</dict>
-		<key>Pods-AgileMoodMarbles.xcscheme</key>
+		<key>Pods-AgileMoodMarbles.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>isShown</key>
 			<true/>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
-	<dict>
-		<key>1D416D5E8AAA52C62EECDEEAFED16087</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>361FD3408A16EB67AA1AF8035E30B109</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-	</dict>
+	<dict/>
 </dict>
 </plist>
