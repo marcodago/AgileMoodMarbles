@@ -1,7 +1,7 @@
 Mood Marble Agile tool - iOS Client
 ====================================
 
-### Italy EOSD Mood Marble tool
+### Italy THINKDESK Mood Marble tool
 This application is intended to support the the Mood Marble Agile practice. This is the instance
 that supports the mobile side of the application. The code of web version could be reached at the following address: `https://github.com/marcodago/AgileMoodMarbles-BlueMix`.
 Web version of this solution can be reached at: http://ibm.biz/moodmarbles
@@ -9,7 +9,7 @@ Web version of this solution can be reached at: http://ibm.biz/moodmarbles
 This app has been developed using `Apple XCode` and `Node-Red starter` boilerplate.  
 
 ### How does this work?
-At first launch of iOS app, you'll requested to identify yourself filling the information related to the country & department (`Settings` tab). These info are necessary to categorize evaluations under the right organization, given that CloudantDB where data are stored is unique. No other info are stored onto device, to guarantee user's privacy. After that, moving on the `Set Mood` tab, simply press the smiley that better fit with your feeling.
+At first launch of iOS app, you'll be requested to identify yourself filling the information related to the country & department (`Settings` tab). These info are necessary to categorize evaluations under the right organization, given that CloudantDB where data are stored is unique. No other info are stored onto device, to guarantee user's privacy. After that, moving on the `Set Mood` tab, simply press the smiley that better fit with your feeling.
 
 ![MM Profile Screenshot](mm_mobile_profile.png)  ![MM Moods Screenshot](mm_mobile_rate.png)
 
