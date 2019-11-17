@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  AgileMoodMarbles
 //
-//  Created by Marco D'Agostino on 30/10/17.
-//  Copyright © 2017 Marco D'Agostino. All rights reserved.
+//  Created by Marco D'Agostino on 17/11/2019.
+//  Copyright © 2019 Marco D'Agostino. All rights reserved.
 //
 
 import UIKit
@@ -15,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
     
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         let firstUse = UserDefaults.standard.object(forKey: "storedcountry")
         
@@ -23,7 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             
             let topWindow = UIWindow(frame: UIScreen.main.bounds)
             topWindow.rootViewController = UIViewController()
-            topWindow.windowLevel = UIWindowLevelAlert + 1
+            topWindow.windowLevel = UIWindow.Level.alert + 1
             let alert = UIAlertController(title: "Profile is needed!", message: "To use this application, go to the settings page and setup your profile. Thanks!", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "confirm"), style: .cancel, handler: {(_ action: UIAlertAction) -> Void in
                 

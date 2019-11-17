@@ -171,7 +171,7 @@ open class Caliber {
     
     public func ok(){}
     
-    fileprivate func ns(_ caliberAttribute:  CaliberAttribute) -> NSLayoutAttribute {
+    fileprivate func ns(_ caliberAttribute:  CaliberAttribute) -> NSLayoutConstraint.Attribute {
         switch caliberAttribute {
         case .bottom: return .bottom
         case .centerX: return .centerX
@@ -221,7 +221,7 @@ public enum CaliberX {
 
 public extension UIView {
     
-    public var caliber: Caliber {
+    var caliber: Caliber {
         get {
             return Caliber(self)
         }

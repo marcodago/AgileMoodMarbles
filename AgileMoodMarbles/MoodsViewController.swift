@@ -2,30 +2,31 @@
 //  MoodsViewController.swift
 //  AgileMoodMarbles
 //
-//  Created by Marco D'Agostino on 30/10/17.
-//  Copyright © 2017 Marco D'Agostino. All rights reserved.
+//  Created by Marco D'Agostino on 17/11/2019.
+//  Copyright © 2019 Marco D'Agostino. All rights reserved.
 //
 
 import UIKit
+import PMAlertController
 
 class MoodsViewController: UIViewController {
     
     var country = String()
     var dept = String()
-    var nickname = String()
+    //    var nickname = String()
     
     @IBOutlet var buttonGreen: UIButton!
     @IBAction func buttonGreenpressed(_ sender: UIButton) {
         
         alertPanel(iconValue: "G")
     }
-   
+    
     @IBOutlet var buttonYellow: UIButton!
     @IBAction func buttonYellowpressed(_ sender: UIButton) {
         
         alertPanel(iconValue: "Y")
     }
-   
+    
     @IBOutlet var buttonRed: UIButton!
     @IBAction func buttonRedpressed(_ sender: UIButton) {
         
@@ -33,35 +34,55 @@ class MoodsViewController: UIViewController {
     }
     
     func alertPanel (iconValue: String) {
-      
-        let alertController = UIAlertController(title: "Feedback", message: "Many thanks for your evaluation. Would you also add a comment?", preferredStyle: .alert)
-    
-        let actionYes = UIAlertAction(title: "Yes", style: .default) { (UIAlertAction) in
+        
+        let alertController = PMAlertController(title: "Feedback", description: "Many thanks for your evaluation. Would you also add a comment?", image: UIImage(named: "TDLogo_LightBG.eps"), style: .walkthrough)
+        
+        alertController.headerViewTopSpaceConstraint.constant = 20
+        alertController.alertContentStackViewLeadingConstraint.constant = 20
+        alertController.alertContentStackViewTrailingConstraint.constant = 20
+        alertController.alertContentStackViewTopConstraint.constant = 20
+        alertController.alertActionStackViewLeadingConstraint.constant = 20
+        alertController.alertActionStackViewTrailingConstraint.constant = 20
+        alertController.alertActionStackViewTopConstraint.constant = 20
+        alertController.alertActionStackViewBottomConstraint.constant = 20
+        alertController.view.layoutIfNeeded()
+        
+        let actionYes = PMAlertAction(title: "Yes", style: .default) { ()
             self.leaveComment(iconValue: iconValue)
-            print("Perfect! Leave your comment");
+            print("Thanks for your evaluation");
         }
         
-        let actionNo = UIAlertAction(title: "No", style: .default) { (UIAlertAction) in
-            print("Thanks for your evaluation");
+        let actionNo = PMAlertAction(title: "No", style: .cancel) { () in
+            let payload = "&comment=\("N/A")"
+            self.LoadJSONtoCloudantDB(payload: payload)
         }
         
         alertController.addAction(actionYes)
         alertController.addAction(actionNo)
-        self.present(alertController, animated: true, completion:nil)
         
-    }
-   
+        self.present(alertController, animated: true, completion: nil)
+        
+    }    
+    
     func leaveComment (iconValue: String) {
         
-        let alertController = UIAlertController(title: "Evaluation", message: "Please enter your feedback:", preferredStyle: .alert)
+        let alertVC = PMAlertController(title: "THINKDESK", description: "Many thanks for letting us what do you think about provided service.", image: UIImage(named: "TDLogo_LightBG.eps"), style: .walkthrough)
         
-        let saveAction = UIAlertAction(title: "Submit", style: .default, handler: {
+        alertVC.headerViewTopSpaceConstraint.constant = 20
+        alertVC.alertContentStackViewLeadingConstraint.constant = 20
+        alertVC.alertContentStackViewTrailingConstraint.constant = 20
+        alertVC.alertContentStackViewTopConstraint.constant = 20
+        alertVC.alertActionStackViewLeadingConstraint.constant = 20
+        alertVC.alertActionStackViewTrailingConstraint.constant = 20
+        alertVC.alertActionStackViewTopConstraint.constant = 20
+        alertVC.alertActionStackViewBottomConstraint.constant = 20
+        alertVC.view.layoutIfNeeded()
+        
+        let actionSubmit = PMAlertAction(title: "Submit", style: .default) { ()
+            print("Submit")
             
-            alert -> Void in
-            
-            let firstTextField = alertController.textFields![0] as UITextField?
-            let secondTextField = alertController.textFields![0] as UITextField?
-            
+            let firstTextField = alertVC.textFields[0] as UITextField?
+            let secondTextField = alertVC.textFields[0] as UITextField?
             var allComments: [String] = []
             var allIconsComments: [String] = []
             
@@ -72,12 +93,15 @@ class MoodsViewController: UIViewController {
             if iconValue == "G" {
                 secondTextField!.text = "G"
             }
+            
             if iconValue == "Y" {
                 secondTextField!.text = "Y"
             }
+            
             if iconValue == "R" {
                 secondTextField!.text = "R"
             }
+            
             allIconsComments.append((secondTextField?.text!)!)
             
             self.country = String( UserDefaults.standard.string(forKey: "storedcountry")!)
@@ -86,30 +110,27 @@ class MoodsViewController: UIViewController {
             let payload = "&country=\(self.country)&dept=\(self.dept)&mood=\(iconValue)&comment=\(comment!)"
             
             self.LoadJSONtoCloudantDB(payload: payload)
-            
             print("comment:\(String(describing: firstTextField?.text))")
-        })
-        
-        let cancelAction = UIAlertAction(title: "Cancel", style: .default, handler: {
-            (action : UIAlertAction!) -> Void in
-            
-        })
-        
-        alertController.addTextField { (textField : UITextField!) -> Void in
-            textField.placeholder = "Enter comment"
         }
         
-        alertController.addAction(saveAction)
-        alertController.addAction(cancelAction)
+        let actionCancel = PMAlertAction(title: "Cancel", style: .cancel) { () in
+            print("Cancel")
+        }
         
-        self.present(alertController, animated: true, completion: nil)
-                
+        alertVC.addTextField { (textField) in
+            textField?.placeholder = "Leave your comment..."
+        }
+        alertVC.addAction(actionCancel)
+        alertVC.addAction(actionSubmit)
+        
+        self.present(alertVC, animated: true, completion: nil)
     }
+    
     
     func LoadJSONtoCloudantDB(payload:String) {
         
-        let signature = "mdago_v01_iOS"
-        let tipo = "thinkdesk_comments"
+        let signature = "mdago_v2.0_iOS"
+        let tipo = "ITSEG-THINKDESK_comments"
         
         let keyValues = "signature=\(signature)&type=\(tipo)" + payload
         
@@ -120,7 +141,7 @@ class MoodsViewController: UIViewController {
         var request = URLRequest(url: url as URL)
         
         request.httpMethod = "POST"
-      
+        
         request.cachePolicy = URLRequest.CachePolicy.reloadIgnoringCacheData
         
         let paramString = keyValues
@@ -144,7 +165,5 @@ class MoodsViewController: UIViewController {
         
         task.resume()
         
-    }    
-    
+    }
 }
-
