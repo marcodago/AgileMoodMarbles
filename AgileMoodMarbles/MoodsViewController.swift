@@ -13,57 +13,25 @@ class MoodsViewController: UIViewController {
     
     var country = String()
     var dept = String()
-    //    var nickname = String()
-    
+
     @IBOutlet var buttonGreen: UIButton!
     @IBAction func buttonGreenpressed(_ sender: UIButton) {
         
-        alertPanel(iconValue: "G")
+        leaveComment(iconValue: "G")
     }
     
     @IBOutlet var buttonYellow: UIButton!
     @IBAction func buttonYellowpressed(_ sender: UIButton) {
         
-        alertPanel(iconValue: "Y")
+        leaveComment(iconValue: "Y")
     }
     
     @IBOutlet var buttonRed: UIButton!
     @IBAction func buttonRedpressed(_ sender: UIButton) {
         
-        alertPanel(iconValue: "R")
+        leaveComment(iconValue: "R")
     }
-    
-    func alertPanel (iconValue: String) {
-        
-        let alertController = PMAlertController(title: "Feedback", description: "Many thanks for your evaluation. Would you also add a comment?", image: UIImage(named: "TDLogo_LightBG.eps"), style: .walkthrough)
-        
-        alertController.headerViewTopSpaceConstraint.constant = 20
-        alertController.alertContentStackViewLeadingConstraint.constant = 20
-        alertController.alertContentStackViewTrailingConstraint.constant = 20
-        alertController.alertContentStackViewTopConstraint.constant = 20
-        alertController.alertActionStackViewLeadingConstraint.constant = 20
-        alertController.alertActionStackViewTrailingConstraint.constant = 20
-        alertController.alertActionStackViewTopConstraint.constant = 20
-        alertController.alertActionStackViewBottomConstraint.constant = 20
-        alertController.view.layoutIfNeeded()
-        
-        let actionYes = PMAlertAction(title: "Yes", style: .default) { ()
-            self.leaveComment(iconValue: iconValue)
-            print("Thanks for your evaluation");
-        }
-        
-        let actionNo = PMAlertAction(title: "No", style: .cancel) { () in
-            let payload = "&comment=\("N/A")"
-            self.LoadJSONtoCloudantDB(payload: payload)
-        }
-        
-        alertController.addAction(actionYes)
-        alertController.addAction(actionNo)
-        
-        self.present(alertController, animated: true, completion: nil)
-        
-    }    
-    
+
     func leaveComment (iconValue: String) {
         
         let alertVC = PMAlertController(title: "THINKDESK", description: "Many thanks for letting us what do you think about provided service.", image: UIImage(named: "TDLogo_LightBG.eps"), style: .walkthrough)
