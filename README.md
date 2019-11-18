@@ -11,11 +11,11 @@ This app has been developed using `Apple XCode` and `Node-Red starter` boilerpla
 ### How does this work?
 At first launch of iOS app, you'll be requested to identify yourself filling the information related to the country & department (`Settings` tab). These info are necessary to categorize evaluations under the right organization, given that CloudantDB where data are stored is unique. No other info are stored onto device, to guarantee user's privacy. After that, moving on the `Set Mood` tab, simply press the smiley that better fit with your feeling.
 
-![MM Profile Screenshot](mm_mobile_profile.png)  ![MM Moods Screenshot](mm_mobile_rate.png)
+![MM Moods Screenshot](Main.png)
 
 A possibility to leave a comment is also included. When done, you could move on the `Commets`tab to visualize the list of marbles for the profiled country & department or you can visualize the overall score selecting `Metrics`tab.
 
-![MM Chart Screenshot](mm_mobile_chart.png)   ![MM Evaluations Screenshot](mm_mobile_list.png)
+![MM Chart Screenshot](Commnet.png)   ![MM Evaluations Screenshot](Metric.png)
 
 ### Customising Node-RED
 This repository is here to be cloned, modified and re-used to allow anyone create
