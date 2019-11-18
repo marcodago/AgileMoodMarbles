@@ -19,34 +19,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Version 2.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MuY-aE-77f">
-                                <rect key="frame" x="159" y="735" width="709" height="15"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="moodmarbles.png" translatesAutoresizingMaskIntoConstraints="NO" id="0B5-SH-vjG">
-                                <rect key="frame" x="192" y="254" width="640" height="260"/>
-                            </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="fill" text="an Italian CIO solution" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zvv-IR-GWU">
-                                <rect key="frame" x="439.5" y="669" width="145" height="30"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="98" translatesAutoresizingMaskIntoConstraints="NO" id="zaE-kP-dOH">
+                                <rect key="frame" x="192" y="138" width="640" height="492.5"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="moodmarbles.png" translatesAutoresizingMaskIntoConstraints="NO" id="0B5-SH-vjG">
+                                        <rect key="frame" x="0.0" y="0.0" width="640" height="260"/>
+                                    </imageView>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" text="an Italian CIO solution" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zvv-IR-GWU">
+                                        <rect key="frame" x="0.0" y="358" width="640" height="22"/>
+                                        <color key="textColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Version 2.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MuY-aE-77f">
+                                        <rect key="frame" x="0.0" y="478" width="640" height="14.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="0B5-SH-vjG" firstAttribute="centerX" secondItem="M6r-i0-JNy" secondAttribute="centerX" id="dKj-m8-jaj"/>
-                            <constraint firstItem="Zvv-IR-GWU" firstAttribute="centerX" secondItem="M6r-i0-JNy" secondAttribute="centerX" id="sNq-Yt-0Vg"/>
-                            <constraint firstItem="0B5-SH-vjG" firstAttribute="centerY" secondItem="M6r-i0-JNy" secondAttribute="centerY" id="x29-bx-riS"/>
+                            <constraint firstItem="zaE-kP-dOH" firstAttribute="centerX" secondItem="M6r-i0-JNy" secondAttribute="centerX" id="0qn-aL-fx4"/>
+                            <constraint firstItem="zaE-kP-dOH" firstAttribute="centerY" secondItem="M6r-i0-JNy" secondAttribute="centerY" id="xiw-PG-PpC"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="jQ9-PQ-WZf"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="atX-R5-aU5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="50.399999999999999" y="373.76311844077964"/>
+            <point key="canvasLocation" x="50.390625" y="373.4375"/>
         </scene>
     </scenes>
     <resources>

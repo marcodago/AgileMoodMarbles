@@ -116,7 +116,7 @@ class CommentsTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return "Country: \(country) - Dept: \(dept)"
+        return "\(country) - \(dept)"
     }
     
     override func tableView(_ myTable: UITableView, numberOfRowsInSection section: Int) -> Int {

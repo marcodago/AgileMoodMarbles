@@ -34,7 +34,7 @@ class MoodsViewController: UIViewController {
 
     func leaveComment (iconValue: String) {
         
-        let alertVC = PMAlertController(title: "THINKDESK", description: "Many thanks for letting us what do you think about provided service.", image: UIImage(named: "TDLogo_LightBG.eps"), style: .walkthrough)
+        let alertVC = PMAlertController(title: "Many thanks for letting us what do you think about provided service.", description: nil, image: UIImage(named: "think_logo.png"), style: .walkthrough)
         
         alertVC.headerViewTopSpaceConstraint.constant = 20
         alertVC.alertContentStackViewLeadingConstraint.constant = 20
@@ -46,8 +46,8 @@ class MoodsViewController: UIViewController {
         alertVC.alertActionStackViewBottomConstraint.constant = 20
         alertVC.view.layoutIfNeeded()
         
-        let actionSubmit = PMAlertAction(title: "Submit", style: .default) { ()
-            print("Submit")
+        let actionSubmit = PMAlertAction(title: "Submit comment", style: .default) { ()
+            print("Submit comment")
             
             let firstTextField = alertVC.textFields[0] as UITextField?
             let secondTextField = alertVC.textFields[0] as UITextField?
@@ -81,7 +81,7 @@ class MoodsViewController: UIViewController {
             print("comment:\(String(describing: firstTextField?.text))")
         }
         
-        let actionCancel = PMAlertAction(title: "Cancel", style: .cancel) { () in
+        let actionCancel = PMAlertAction(title: "Cancel your feedback", style: .cancel) { () in
             print("Cancel")
         }
         
@@ -98,7 +98,7 @@ class MoodsViewController: UIViewController {
     func LoadJSONtoCloudantDB(payload:String) {
         
         let signature = "mdago_v2.0_iOS"
-        let tipo = "ITSEG-THINKDESK_comments"
+        let tipo = "ITSEG-THINKDESK"
         
         let keyValues = "signature=\(signature)&type=\(tipo)" + payload
         

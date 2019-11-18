@@ -8,6 +8,7 @@
 
 import UIKit
 import Foundation
+import PMAlertController
 
 class SettingsViewController: UIViewController, UITextFieldDelegate, NSURLConnectionDelegate {
     
@@ -21,13 +22,33 @@ class SettingsViewController: UIViewController, UITextFieldDelegate, NSURLConnec
         UserDefaults.standard.set(dept.text!, forKey: "storeddept")
         UserDefaults.standard.synchronize()
         
+        let alertVC = PMAlertController(title: "Thanks", description: "The profile setup for the THINKDESK site has been completed.", image: UIImage(named: "think_logo.png"), style: .walkthrough)
+        
+        alertVC.headerViewTopSpaceConstraint.constant = 20
+        alertVC.alertContentStackViewLeadingConstraint.constant = 20
+        alertVC.alertContentStackViewTrailingConstraint.constant = 20
+        alertVC.alertContentStackViewTopConstraint.constant = 20
+        alertVC.alertActionStackViewLeadingConstraint.constant = 20
+        alertVC.alertActionStackViewTrailingConstraint.constant = 20
+        alertVC.alertActionStackViewTopConstraint.constant = 20
+        alertVC.alertActionStackViewBottomConstraint.constant = 20
+        alertVC.view.layoutIfNeeded()
+        
+        let actionSubmit = PMAlertAction(title: "OK", style: .default) { ()
+            print("Submit comment")
+        }
+        
+        alertVC.addAction(actionSubmit)
+        self.present(alertVC, animated: true, completion: nil)
+        
+/*
         let alertController = UIAlertController(title: "Thanks", message: "Your profile has been completed.", preferredStyle: .alert)
         
         let defaultAction = UIAlertAction(title: "OK", style: .default, handler: nil)
         alertController.addAction(defaultAction)
         
         present(alertController, animated: true, completion: nil)
-
+*/
         
     }
     

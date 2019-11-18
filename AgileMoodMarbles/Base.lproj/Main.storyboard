@@ -136,8 +136,8 @@
                                                 <constraint firstAttribute="width" constant="40" id="pwn-em-Mc2"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0EK-Kd-aaU" userLabel="feedback">
-                                            <rect key="frame" x="62" y="23" width="939" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0EK-Kd-aaU" userLabel="feedback">
+                                            <rect key="frame" x="62" y="13" width="939" height="18"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -146,9 +146,9 @@
                                     <constraints>
                                         <constraint firstAttribute="trailingMargin" secondItem="0EK-Kd-aaU" secondAttribute="trailing" constant="3" id="39U-ui-o4T"/>
                                         <constraint firstItem="nBh-yL-5Bl" firstAttribute="centerY" secondItem="Wdn-R5-Fz7" secondAttribute="centerY" id="4D3-RQ-wdZ"/>
-                                        <constraint firstItem="0EK-Kd-aaU" firstAttribute="top" secondItem="Wdn-R5-Fz7" secondAttribute="topMargin" constant="12" id="C8o-rh-U4M"/>
+                                        <constraint firstItem="0EK-Kd-aaU" firstAttribute="top" secondItem="Wdn-R5-Fz7" secondAttribute="topMargin" constant="2" id="C8o-rh-U4M"/>
                                         <constraint firstItem="0EK-Kd-aaU" firstAttribute="leading" secondItem="nBh-yL-5Bl" secondAttribute="trailing" constant="10" id="SC5-o9-K74"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="0EK-Kd-aaU" secondAttribute="bottom" constant="-11" id="WAG-Jc-xW6"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="0EK-Kd-aaU" secondAttribute="bottom" constant="2" id="WAG-Jc-xW6"/>
                                         <constraint firstItem="nBh-yL-5Bl" firstAttribute="top" secondItem="Wdn-R5-Fz7" secondAttribute="topMargin" constant="-10" id="k4C-fc-svO"/>
                                         <constraint firstItem="nBh-yL-5Bl" firstAttribute="leading" secondItem="Wdn-R5-Fz7" secondAttribute="leadingMargin" constant="-8" id="sX3-Xl-jzR"/>
                                     </constraints>
@@ -189,7 +189,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="oJL-Bh-xMY" firstAttribute="top" secondItem="OOi-jV-ISh" secondAttribute="top" constant="10" id="I1U-pQ-yhF"/>
                             <constraint firstItem="oJL-Bh-xMY" firstAttribute="top" secondItem="OOi-jV-ISh" secondAttribute="top" constant="10" id="p38-Da-Rtn"/>
@@ -258,7 +258,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="3fU-X2-gaX" firstAttribute="leading" secondItem="uLT-XW-zA9" secondAttribute="leading" constant="109" id="BPw-qL-ogx"/>
                             <constraint firstItem="3fU-X2-gaX" firstAttribute="trailing" secondItem="8k6-FA-lmv" secondAttribute="trailing" id="Dzt-1r-fTD"/>

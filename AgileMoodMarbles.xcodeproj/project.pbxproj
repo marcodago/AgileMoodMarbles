@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		88867C1564B5DD383C1ED104 /* Pods_AgileMoodMarbles.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7641052C01B6CCEAB6B578D2 /* Pods_AgileMoodMarbles.framework */; };
 		91545C771FBD81AF00252A07 /* Caliber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91545C761FBD81AF00252A07 /* Caliber.swift */; };
-		91B722202380649600D5EA47 /* TDLogo_LightBG.eps in Resources */ = {isa = PBXBuildFile; fileRef = 91B7221F2380649600D5EA47 /* TDLogo_LightBG.eps */; };
+		91CEFD182382887700776FC5 /* think_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 91CEFD172382887700776FC5 /* think_logo.png */; };
 		91E3987F1FA709BB0032E4CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E3987E1FA709BB0032E4CE /* AppDelegate.swift */; };
 		91E398861FA709BB0032E4CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91E398841FA709BB0032E4CE /* Main.storyboard */; };
 		91E398881FA709BB0032E4CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91E398871FA709BB0032E4CE /* Assets.xcassets */; };
@@ -44,7 +44,7 @@
 		49168936314143D14561DA62 /* Pods-AgileMoodMarbles.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AgileMoodMarbles.release.xcconfig"; path = "Pods/Target Support Files/Pods-AgileMoodMarbles/Pods-AgileMoodMarbles.release.xcconfig"; sourceTree = "<group>"; };
 		7641052C01B6CCEAB6B578D2 /* Pods_AgileMoodMarbles.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AgileMoodMarbles.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		91545C761FBD81AF00252A07 /* Caliber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Caliber.swift; sourceTree = "<group>"; };
-		91B7221F2380649600D5EA47 /* TDLogo_LightBG.eps */ = {isa = PBXFileReference; lastKnownFileType = file; path = TDLogo_LightBG.eps; sourceTree = "<group>"; };
+		91CEFD172382887700776FC5 /* think_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = think_logo.png; sourceTree = "<group>"; };
 		91E3987B1FA709BB0032E4CE /* AgileMoodMarbles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AgileMoodMarbles.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91E3987E1FA709BB0032E4CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		91E398851FA709BB0032E4CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -82,7 +82,7 @@
 			children = (
 				91E3987D1FA709BB0032E4CE /* AgileMoodMarbles */,
 				91E3987C1FA709BB0032E4CE /* Products */,
-				91B7221F2380649600D5EA47 /* TDLogo_LightBG.eps */,
+				91CEFD172382887700776FC5 /* think_logo.png */,
 				91E3989E1FA70C070032E4CE /* green_smiley.png */,
 				91E3989F1FA70C080032E4CE /* red_smiley.png */,
 				91E398A01FA70C080032E4CE /* yellow_smiley.png */,
@@ -201,13 +201,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				91E3988B1FA709BB0032E4CE /* LaunchScreen.storyboard in Resources */,
-				91B722202380649600D5EA47 /* TDLogo_LightBG.eps in Resources */,
 				91E398A51FA70C460032E4CE /* moodmarbles.png in Resources */,
 				91E398A21FA70C080032E4CE /* red_smiley.png in Resources */,
 				91E398A31FA70C080032E4CE /* yellow_smiley.png in Resources */,
 				91E398881FA709BB0032E4CE /* Assets.xcassets in Resources */,
 				91E398A11FA70C080032E4CE /* green_smiley.png in Resources */,
 				91E398861FA709BB0032E4CE /* Main.storyboard in Resources */,
+				91CEFD182382887700776FC5 /* think_logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
