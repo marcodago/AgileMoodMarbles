@@ -1,17 +1,16 @@
 //
-//  ChartViewController.swift
-//  AgileMoodMarbles
+//  BarChartViewController.swift
+//  ChartsTutorial
 //
-//  Created by Marco D'Agostino on 17/11/2019.
-//  Copyright © 2019 Marco D'Agostino. All rights reserved.
+//  Created by Duy Bui on 4/20/19.
+//  Copyright © 2019 iOSTemplates. All rights reserved.
 //
 
 import UIKit
 import Charts
 
-class ChartViewController: UIViewController {
+class BarChartViewController: UIViewController {
     
-    var pieChartView: PieChartView!
     var GREEN: Double = 0.00
     var YELLOW: Double = 0.00
     var RED: Double = 0.00
@@ -21,34 +20,55 @@ class ChartViewController: UIViewController {
     var jsonArray: [String] = []
     var country = String()
     var dept = String ()
-    
+
+    @IBOutlet weak var barChartView: BarChartView!
+      
     override func viewDidLoad() {
+    super.viewDidLoad()
+    
+    let firstUse = UserDefaults.standard.object(forKey: "storedcountry")
         
+    if firstUse != nil {
+            
+        self.country = String( UserDefaults.standard.string(forKey: "storedcountry")!)
+        self.dept = String( UserDefaults.standard.string(forKey: "storeddept")!)
+            
+        GetJSONfromCloudantDB ()
+            
+        let smiley = ["Green", "Amber", "Red"]
+        let numbers = [GREEN, YELLOW, RED]
+        
+        barChartView.animate(yAxisDuration: 2.0)
+        barChartView.pinchZoomEnabled = false
+        barChartView.drawBarShadowEnabled = false
+        barChartView.drawBordersEnabled = false
+        barChartView.doubleTapToZoomEnabled = false
+        barChartView.drawGridBackgroundEnabled = false
+        let  xAxisFont : XAxis = self.barChartView.xAxis
+        xAxisFont.labelFont = UIFont(name: "Verdana", size: 16.0)!
+        barChartView.leftAxis.labelFont = UIFont.systemFont(ofSize: 18.0, weight: UIFont.Weight.regular)
+        barChartView.leftAxis.labelTextColor = .black
+        barChartView.xAxis.labelPosition = .bottom
+        barChartView.xAxis.setLabelCount(0, force: false)
+        barChartView.leftAxis.axisMinimum = 0
+        barChartView.leftAxis.axisMaximum = Double(TOTAL)
+        let legend = barChartView.legend
+        legend.font = UIFont(name: "Verdana", size: 16.0)!
+        barChartView.legend.enabled = true
+        barChartView.legend.horizontalAlignment = .right
+        barChartView.legend.verticalAlignment = .bottom
+        barChartView.legend.orientation = .horizontal
+        barChartView.highlighter = nil
+        barChartView.rightAxis.enabled = false
+        barChartView.xAxis.drawGridLinesEnabled = false
+        barChartView.animate(yAxisDuration: 1.5, easingOption: .easeInOutQuart)
+        
+        setChart(dataPoints: smiley, values: numbers)
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        
-        let firstUse = UserDefaults.standard.object(forKey: "storedcountry")
-        
-        if firstUse != nil {
-            
-            self.country = String( UserDefaults.standard.string(forKey: "storedcountry")!)
-            self.dept = String( UserDefaults.standard.string(forKey: "storeddept")!)
-            
-            GetJSONfromCloudantDB ()
-            
-            let moods = ["Green", "Amber", "Red"]
-            let percentage = [GREEN/TOTAL*100.00, YELLOW/TOTAL*100.00, RED/TOTAL*100.00]
-            
-            pieChartView = PieChartView(frame: self.view.bounds)
-            self.view.addSubview(pieChartView!)
-            
-            setChart(dataPoints: moods, values: percentage)
-        }
-        
-    }
-    
-    func GetJSONfromCloudantDB () {
+  }
+  
+      func GetJSONfromCloudantDB () {
 
         let postEndpoint: String = ("https://0887ad8a-8f0b-4aec-b8fc-bf66958c007a-bluemix:b044033ceb27472f0c349ac201473b760f3e3f1f360d19209f37e860118ff9bd@0887ad8a-8f0b-4aec-b8fc-bf66958c007a-bluemix.cloudant.com/comments/_all_docs?include_docs=true")
         
@@ -120,37 +140,24 @@ class ChartViewController: UIViewController {
             
         }
     }
+  
+  func setChart(dataPoints: [String], values: [Double]) {
+    barChartView.noDataText = "No data available so far."
     
-    func setChart(dataPoints: [String], values: [Double]) {
-        
-        var dataEntries: [ChartDataEntry] = []
-        
-        for i in 0..<dataPoints.count {
-            let dataEntry1 = PieChartDataEntry(value: Double(values[i]), label: dataPoints[i])
-            dataEntries.append(dataEntry1)
-        }
-        
-        let pieChartDataSet = PieChartDataSet(entries: dataEntries, label: "Mood Marbles Segmentation")
-        let pieChartData = PieChartData(dataSet: pieChartDataSet)
-        pieChartView.data = pieChartData
-        
-        let colorBlack = UIColor.black
-        pieChartData.setValueTextColor(colorBlack)
-        
-        let formatter = NumberFormatter()
-        formatter.numberStyle = .percent
-        formatter.maximumFractionDigits = 2
-        formatter.multiplier = 1.0
-        pieChartData.setValueFormatter(DefaultValueFormatter(formatter:formatter))
-        
-        for _ in 0..<dataPoints.count {
-            
-            pieChartDataSet.sliceSpace = 1
-            pieChartDataSet.colors = [UIColor.green, UIColor.yellow, UIColor.red]
-            
-        }
-        
-        self.pieChartView.data = PieChartData(dataSet: pieChartDataSet)
-        
+    var dataEntries: [BarChartDataEntry] = []
+    
+    for i in 0..<dataPoints.count {
+        let dataEntry = BarChartDataEntry(x: (Double(i)), y: Double(values[i]))
+      dataEntries.append(dataEntry)
     }
+    
+    let chartDataSet = BarChartDataSet(entries: dataEntries, label: "Moods Values")
+    chartDataSet.colors = [.green, .yellow, .red]
+    let chartData = BarChartData(dataSet: chartDataSet)
+    chartDataSet.valueFormatter = DefaultValueFormatter(decimals: 0)
+    chartDataSet.valueColors = [.black]
+    chartDataSet.valueFont = UIFont.boldSystemFont(ofSize: 16.0)
+        
+    barChartView.data = chartData
+  }
 }

@@ -94,7 +94,6 @@ class MoodsViewController: UIViewController {
         self.present(alertVC, animated: true, completion: nil)
     }
     
-    
     func LoadJSONtoCloudantDB(payload:String) {
         
         let signature = "mdago_v2.0_iOS"

@@ -7,16 +7,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "3E4B7946-D4B3-4E01-ADBC-F00A32923DA1"
-            shouldBeEnabled = "No"
+            uuid = "09FFE25C-D58A-480E-B4C8-78C2938D5DA1"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "AgileMoodMarbles/CommentsTableViewController.swift"
+            filePath = "AgileMoodMarbles/ChartViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
-            landmarkName = "GetJSONfromCloudantDB()"
+            startingLineNumber = "123"
+            endingLineNumber = "123"
+            landmarkName = "setChart(dataPoints:values:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

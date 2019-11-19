@@ -41,15 +41,6 @@ class SettingsViewController: UIViewController, UITextFieldDelegate, NSURLConnec
         alertVC.addAction(actionSubmit)
         self.present(alertVC, animated: true, completion: nil)
         
-/*
-        let alertController = UIAlertController(title: "Thanks", message: "Your profile has been completed.", preferredStyle: .alert)
-        
-        let defaultAction = UIAlertAction(title: "OK", style: .default, handler: nil)
-        alertController.addAction(defaultAction)
-        
-        present(alertController, animated: true, completion: nil)
-*/
-        
     }
     
     override func viewDidLoad() {

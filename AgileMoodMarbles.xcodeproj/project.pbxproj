@@ -24,7 +24,7 @@
 		91E398A21FA70C080032E4CE /* red_smiley.png in Resources */ = {isa = PBXBuildFile; fileRef = 91E3989F1FA70C080032E4CE /* red_smiley.png */; };
 		91E398A31FA70C080032E4CE /* yellow_smiley.png in Resources */ = {isa = PBXBuildFile; fileRef = 91E398A01FA70C080032E4CE /* yellow_smiley.png */; };
 		91E398A51FA70C460032E4CE /* moodmarbles.png in Resources */ = {isa = PBXBuildFile; fileRef = 91E398A41FA70C450032E4CE /* moodmarbles.png */; };
-		91E398A91FA724CB0032E4CE /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E398A81FA724CB0032E4CE /* ChartViewController.swift */; };
+		91E398A91FA724CB0032E4CE /* BarChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E398A81FA724CB0032E4CE /* BarChartViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -61,7 +61,7 @@
 		91E3989F1FA70C080032E4CE /* red_smiley.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = red_smiley.png; sourceTree = "<group>"; };
 		91E398A01FA70C080032E4CE /* yellow_smiley.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yellow_smiley.png; sourceTree = "<group>"; };
 		91E398A41FA70C450032E4CE /* moodmarbles.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = moodmarbles.png; sourceTree = "<group>"; };
-		91E398A81FA724CB0032E4CE /* ChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
+		91E398A81FA724CB0032E4CE /* BarChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartViewController.swift; sourceTree = "<group>"; };
 		FC20AFD3FFF5847A5E6C9B56 /* Pods-AgileMoodMarbles.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AgileMoodMarbles.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AgileMoodMarbles/Pods-AgileMoodMarbles.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -108,7 +108,7 @@
 				91E398841FA709BB0032E4CE /* Main.storyboard */,
 				91E3987E1FA709BB0032E4CE /* AppDelegate.swift */,
 				91545C761FBD81AF00252A07 /* Caliber.swift */,
-				91E398A81FA724CB0032E4CE /* ChartViewController.swift */,
+				91E398A81FA724CB0032E4CE /* BarChartViewController.swift */,
 				91E398931FA70A290032E4CE /* CommentsTableViewController.swift */,
 				91E398971FA70A290032E4CE /* CustomTableViewCell.swift */,
 				91E398941FA70A290032E4CE /* MoodsViewController.swift */,
@@ -263,7 +263,7 @@
 				91E398991FA70A290032E4CE /* CommentsTableViewController.swift in Sources */,
 				91E3989B1FA70A290032E4CE /* MyButtonsLayouts.swift in Sources */,
 				91E398981FA70A290032E4CE /* TabBarConfigurationViewController.swift in Sources */,
-				91E398A91FA724CB0032E4CE /* ChartViewController.swift in Sources */,
+				91E398A91FA724CB0032E4CE /* BarChartViewController.swift in Sources */,
 				91545C771FBD81AF00252A07 /* Caliber.swift in Sources */,
 				91E3989A1FA70A290032E4CE /* MoodsViewController.swift in Sources */,
 				91E3987F1FA709BB0032E4CE /* AppDelegate.swift in Sources */,

@@ -177,31 +177,41 @@
         <!--Metrics-->
         <scene sceneID="OxA-9a-OvT">
             <objects>
-                <viewController id="I23-GP-DCt" userLabel="Metrics" customClass="ChartViewController" customModule="AgileMoodMarbles" sceneMemberID="viewController">
+                <viewController id="I23-GP-DCt" userLabel="Metrics" customClass="BarChartViewController" customModule="AgileMoodMarbles" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="trw-Kp-9go">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Moods segmentation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oJL-Bh-xMY">
-                                <rect key="frame" x="412.5" y="10" width="199" height="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Moods Totals" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oJL-Bh-xMY" userLabel="Moods Average">
+                                <rect key="frame" x="449.5" y="10" width="125" height="24"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pwc-wT-aTC" customClass="BarChartView" customModule="Charts">
+                                <rect key="frame" x="150" y="184" width="724" height="434"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
                         </subviews>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="oJL-Bh-xMY" firstAttribute="top" secondItem="OOi-jV-ISh" secondAttribute="top" constant="10" id="I1U-pQ-yhF"/>
-                            <constraint firstItem="oJL-Bh-xMY" firstAttribute="top" secondItem="OOi-jV-ISh" secondAttribute="top" constant="10" id="p38-Da-Rtn"/>
-                            <constraint firstItem="oJL-Bh-xMY" firstAttribute="centerX" secondItem="trw-Kp-9go" secondAttribute="centerX" id="paU-y2-oFd"/>
+                            <constraint firstItem="OOi-jV-ISh" firstAttribute="trailing" secondItem="pwc-wT-aTC" secondAttribute="trailing" constant="150" id="1fL-nF-KzK"/>
+                            <constraint firstItem="OOi-jV-ISh" firstAttribute="bottom" secondItem="pwc-wT-aTC" secondAttribute="bottom" constant="100" id="9aC-s5-hSu"/>
+                            <constraint firstItem="pwc-wT-aTC" firstAttribute="leading" secondItem="OOi-jV-ISh" secondAttribute="leading" constant="150" id="K5x-r1-eu2"/>
+                            <constraint firstItem="oJL-Bh-xMY" firstAttribute="top" secondItem="OOi-jV-ISh" secondAttribute="top" constant="10" id="UMT-LL-R4d"/>
+                            <constraint firstItem="pwc-wT-aTC" firstAttribute="top" secondItem="oJL-Bh-xMY" secondAttribute="bottom" constant="150" id="VmS-Me-0lH"/>
+                            <constraint firstItem="oJL-Bh-xMY" firstAttribute="centerX" secondItem="trw-Kp-9go" secondAttribute="centerX" id="tGA-ZN-UgT"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="OOi-jV-ISh"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Metrics" image="Dashboard" id="jkL-lI-7hf"/>
+                    <connections>
+                        <outlet property="barChartView" destination="pwc-wT-aTC" id="SdA-8G-la7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IcI-x3-nmg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="742" y="588"/>
+            <point key="canvasLocation" x="741.796875" y="587.5"/>
         </scene>
         <!--Settings-->
         <scene sceneID="rCK-qI-Fhd">
@@ -214,7 +224,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zYE-7r-nhO">
                                 <rect key="frame" x="20" y="126" width="749" height="34"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="unlessEditing" translatesAutoresizingMaskIntoConstraints="NO" id="3fU-X2-gaX">
@@ -226,7 +236,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Site" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QY4-Um-I3p">
                                 <rect key="frame" x="20" y="190" width="749" height="34"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="unlessEditing" translatesAutoresizingMaskIntoConstraints="NO" id="8k6-FA-lmv">
@@ -235,9 +245,19 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country Settings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vb6-rh-w7k" userLabel="Country Settings">
+                                <rect key="frame" x="434" y="8" width="156" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="deW-Jf-sWM" customClass="MyButtonsLayouts" customModule="AgileMoodMarbles">
-                                <rect key="frame" x="87" y="367" width="850" height="34"/>
+                                <rect key="frame" x="50" y="359" width="924" height="50"/>
                                 <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="0.89161494006849318" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="3um-Om-DNP"/>
+                                    <constraint firstAttribute="width" secondItem="deW-Jf-sWM" secondAttribute="height" multiplier="14:1" id="P6O-Dr-FeH"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="black" pointSize="18"/>
                                 <state key="normal" title="Save settings">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -251,28 +271,23 @@
                                     <action selector="saveSettings:" destination="gPv-II-KlC" eventType="touchUpInside" id="oYZ-0R-Ux2"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country Settings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vb6-rh-w7k" userLabel="Country Settings">
-                                <rect key="frame" x="434" y="8" width="156" height="24"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="deW-Jf-sWM" firstAttribute="leading" secondItem="uLT-XW-zA9" secondAttribute="leading" constant="50" id="2ai-Wp-HP0"/>
                             <constraint firstItem="3fU-X2-gaX" firstAttribute="leading" secondItem="uLT-XW-zA9" secondAttribute="leading" constant="109" id="BPw-qL-ogx"/>
                             <constraint firstItem="3fU-X2-gaX" firstAttribute="trailing" secondItem="8k6-FA-lmv" secondAttribute="trailing" id="Dzt-1r-fTD"/>
                             <constraint firstItem="3fU-X2-gaX" firstAttribute="trailing" secondItem="5yW-Ih-rZ6" secondAttribute="trailingMargin" id="GHG-b7-JFX"/>
                             <constraint firstItem="zYE-7r-nhO" firstAttribute="leading" secondItem="uLT-XW-zA9" secondAttribute="leading" constant="20" id="Hj8-Dh-8nK"/>
                             <constraint firstItem="deW-Jf-sWM" firstAttribute="centerY" secondItem="5yW-Ih-rZ6" secondAttribute="centerY" id="I6O-Ct-LB7"/>
                             <constraint firstItem="zYE-7r-nhO" firstAttribute="top" secondItem="3fU-X2-gaX" secondAttribute="top" id="LbG-b9-YVm"/>
-                            <constraint firstItem="deW-Jf-sWM" firstAttribute="leading" secondItem="uLT-XW-zA9" secondAttribute="leading" constant="87" id="Lpx-nU-gfj"/>
                             <constraint firstItem="zYE-7r-nhO" firstAttribute="trailing" secondItem="QY4-Um-I3p" secondAttribute="trailing" id="MZw-qH-RrT"/>
                             <constraint firstItem="zYE-7r-nhO" firstAttribute="bottom" secondItem="3fU-X2-gaX" secondAttribute="bottom" id="P43-Qc-3bq"/>
                             <constraint firstItem="QY4-Um-I3p" firstAttribute="top" secondItem="8k6-FA-lmv" secondAttribute="top" id="SOy-vq-35t"/>
                             <constraint firstItem="Vb6-rh-w7k" firstAttribute="centerX" secondItem="deW-Jf-sWM" secondAttribute="centerX" id="XtU-L3-ULG"/>
                             <constraint firstItem="Vb6-rh-w7k" firstAttribute="top" secondItem="uLT-XW-zA9" secondAttribute="top" constant="8" id="Y6Z-rq-pVo"/>
                             <constraint firstItem="uLT-XW-zA9" firstAttribute="trailing" secondItem="zYE-7r-nhO" secondAttribute="trailing" constant="255" id="Yy4-a1-ElL"/>
+                            <constraint firstItem="uLT-XW-zA9" firstAttribute="trailing" secondItem="deW-Jf-sWM" secondAttribute="trailing" constant="50" id="gdW-jt-xyI"/>
                             <constraint firstItem="QY4-Um-I3p" firstAttribute="top" secondItem="3fU-X2-gaX" secondAttribute="bottom" constant="30" id="jPU-oM-JrL"/>
                             <constraint firstItem="zYE-7r-nhO" firstAttribute="leading" secondItem="QY4-Um-I3p" secondAttribute="leading" id="k8o-84-aaf"/>
                             <constraint firstItem="deW-Jf-sWM" firstAttribute="centerX" secondItem="5yW-Ih-rZ6" secondAttribute="centerX" id="kus-H3-FTd"/>
