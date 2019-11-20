@@ -14,7 +14,7 @@ At first launch of iOS app, you'll be requested to identify yourself filling the
 ![MM Moods Screenshot](client-setting.png)
 
 Now, you can start working with app. Simply press the smiley to register user's feedback.
-![MM Moods Screenshot](main.png)
+![MM Moods Screenshot](home-screen.png)
 
 A possibility to leave a comment is also included. When done, you could move on the `Comments`tab to visualize the list of marbles for the profiled country & department or you can visualize the overall score selecting `Metrics`tab. Both views show you the last 30 days of activities, to grant you to setup trend metrics.
 
