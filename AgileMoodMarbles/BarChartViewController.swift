@@ -2,7 +2,7 @@
 //  BarChartViewController.swift
 //  ChartsTutorial
 //
-//  Created by Duy Bui on 4/20/19.
+//  Created by Marco D'Agostino on 17/11/2019.
 //  Copyright © 2019 iOSTemplates. All rights reserved.
 //
 
@@ -38,7 +38,7 @@ class BarChartViewController: UIViewController {
         let smiley = ["Green", "Amber", "Red"]
         let numbers = [GREEN, YELLOW, RED]
         
-        barChartView.animate(yAxisDuration: 2.0)
+        barChartView.animate(yAxisDuration: 2.5)
         barChartView.pinchZoomEnabled = false
         barChartView.drawBarShadowEnabled = false
         barChartView.drawBordersEnabled = false
@@ -48,20 +48,18 @@ class BarChartViewController: UIViewController {
         xAxisFont.labelFont = UIFont(name: "Verdana", size: 16.0)!
         barChartView.leftAxis.labelFont = UIFont.systemFont(ofSize: 18.0, weight: UIFont.Weight.regular)
         barChartView.leftAxis.labelTextColor = .black
-        barChartView.xAxis.labelPosition = .bottom
-        barChartView.xAxis.setLabelCount(0, force: false)
         barChartView.leftAxis.axisMinimum = 0
         barChartView.leftAxis.axisMaximum = Double(TOTAL)
         let legend = barChartView.legend
         legend.font = UIFont(name: "Verdana", size: 16.0)!
-        barChartView.legend.enabled = true
+        barChartView.legend.enabled = false
         barChartView.legend.horizontalAlignment = .right
         barChartView.legend.verticalAlignment = .bottom
         barChartView.legend.orientation = .horizontal
         barChartView.highlighter = nil
         barChartView.rightAxis.enabled = false
-        barChartView.xAxis.drawGridLinesEnabled = false
-        barChartView.animate(yAxisDuration: 1.5, easingOption: .easeInOutQuart)
+        barChartView.animate(yAxisDuration: 2.5, easingOption: .easeInOutQuart)
+        barChartView.xAxis.enabled = false
         
         setChart(dataPoints: smiley, values: numbers)
     }
