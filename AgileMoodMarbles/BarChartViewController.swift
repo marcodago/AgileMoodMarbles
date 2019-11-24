@@ -20,54 +20,23 @@ class BarChartViewController: UIViewController {
     var jsonArray: [String] = []
     var country = String()
     var dept = String ()
-
-    @IBOutlet weak var barChartView: BarChartView!
-      
-    override func viewDidLoad() {
-    super.viewDidLoad()
     
-    let firstUse = UserDefaults.standard.object(forKey: "storedcountry")
-        
-    if firstUse != nil {
-            
-        self.country = String( UserDefaults.standard.string(forKey: "storedcountry")!)
-        self.dept = String( UserDefaults.standard.string(forKey: "storeddept")!)
-            
-        GetJSONfromCloudantDB ()
-            
-        let smiley = ["Green", "Amber", "Red"]
-        let numbers = [GREEN, YELLOW, RED]
-        
-        barChartView.animate(yAxisDuration: 2.5)
-        barChartView.pinchZoomEnabled = false
-        barChartView.drawBarShadowEnabled = false
-        barChartView.drawBordersEnabled = false
-        barChartView.doubleTapToZoomEnabled = false
-        barChartView.drawGridBackgroundEnabled = false
-        let  xAxisFont : XAxis = self.barChartView.xAxis
-        xAxisFont.labelFont = UIFont(name: "Verdana", size: 16.0)!
-        barChartView.leftAxis.labelFont = UIFont.systemFont(ofSize: 18.0, weight: UIFont.Weight.regular)
-        barChartView.leftAxis.labelTextColor = .black
-        barChartView.leftAxis.axisMinimum = 0
-        barChartView.leftAxis.axisMaximum = Double(TOTAL)
-        let legend = barChartView.legend
-        legend.font = UIFont(name: "Verdana", size: 16.0)!
-        barChartView.legend.enabled = false
-        barChartView.legend.horizontalAlignment = .right
-        barChartView.legend.verticalAlignment = .bottom
-        barChartView.legend.orientation = .horizontal
-        barChartView.highlighter = nil
-        barChartView.rightAxis.enabled = false
-        barChartView.animate(yAxisDuration: 2.5, easingOption: .easeInOutQuart)
-        barChartView.xAxis.enabled = false
-        
-        setChart(dataPoints: smiley, values: numbers)
+    @IBOutlet weak var barChartView: BarChartView!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
     }
     
-  }
-  
-      func GetJSONfromCloudantDB () {
-
+    override func viewWillAppear(_ animated: Bool) {
+        GREEN = 0
+        YELLOW = 0
+        RED = 0
+        TOTAL = 0
+        loadMetrics()
+    }
+    
+    func GetJSONfromCloudantDB () {
+        
         let postEndpoint: String = ("https://0887ad8a-8f0b-4aec-b8fc-bf66958c007a-bluemix:b044033ceb27472f0c349ac201473b760f3e3f1f360d19209f37e860118ff9bd@0887ad8a-8f0b-4aec-b8fc-bf66958c007a-bluemix.cloudant.com/comments/_all_docs?include_docs=true")
         
         let url = NSURL(string: postEndpoint)!
@@ -138,24 +107,64 @@ class BarChartViewController: UIViewController {
             
         }
     }
-  
-  func setChart(dataPoints: [String], values: [Double]) {
-    barChartView.noDataText = "No data available so far."
     
-    var dataEntries: [BarChartDataEntry] = []
-    
-    for i in 0..<dataPoints.count {
-        let dataEntry = BarChartDataEntry(x: (Double(i)), y: Double(values[i]))
-      dataEntries.append(dataEntry)
+    func setChart(dataPoints: [String], values: [Double]) {
+        barChartView.noDataText = "No data available so far."
+        
+        var dataEntries: [BarChartDataEntry] = []
+        
+        for i in 0..<dataPoints.count {
+            let dataEntry = BarChartDataEntry(x: (Double(i)), y: Double(values[i]))
+            dataEntries.append(dataEntry)
+        }
+        
+        let chartDataSet = BarChartDataSet(entries: dataEntries, label: "Moods Values")
+        chartDataSet.colors = [.green, .yellow, .red]
+        let chartData = BarChartData(dataSet: chartDataSet)
+        chartDataSet.valueFormatter = DefaultValueFormatter(decimals: 0)
+        chartDataSet.valueColors = [.black]
+        chartDataSet.valueFont = UIFont.boldSystemFont(ofSize: 16.0)
+        
+        barChartView.data = chartData
     }
     
-    let chartDataSet = BarChartDataSet(entries: dataEntries, label: "Moods Values")
-    chartDataSet.colors = [.green, .yellow, .red]
-    let chartData = BarChartData(dataSet: chartDataSet)
-    chartDataSet.valueFormatter = DefaultValueFormatter(decimals: 0)
-    chartDataSet.valueColors = [.black]
-    chartDataSet.valueFont = UIFont.boldSystemFont(ofSize: 16.0)
+    func loadMetrics() {
+        let firstUse = UserDefaults.standard.object(forKey: "storedcountry")
         
-    barChartView.data = chartData
-  }
+        if firstUse != nil {
+            
+            self.country = String( UserDefaults.standard.string(forKey: "storedcountry")!)
+            self.dept = String( UserDefaults.standard.string(forKey: "storeddept")!)
+            
+            GetJSONfromCloudantDB ()
+            
+            let smiley = ["Green", "Amber", "Red"]
+            let numbers = [GREEN, YELLOW, RED]
+            
+            barChartView.animate(yAxisDuration: 2.5)
+            barChartView.pinchZoomEnabled = false
+            barChartView.drawBarShadowEnabled = false
+            barChartView.drawBordersEnabled = false
+            barChartView.doubleTapToZoomEnabled = false
+            barChartView.drawGridBackgroundEnabled = false
+            let  xAxisFont : XAxis = self.barChartView.xAxis
+            xAxisFont.labelFont = UIFont.systemFont(ofSize: 20.0, weight: UIFont.Weight.black)
+            barChartView.leftAxis.labelFont = UIFont.systemFont(ofSize: 18.0, weight: UIFont.Weight.regular)
+            barChartView.leftAxis.labelTextColor = .black
+            barChartView.leftAxis.axisMinimum = 0
+            barChartView.leftAxis.axisMaximum = Double(TOTAL)
+            let legend = barChartView.legend
+            legend.font = UIFont(name: "Verdana", size: 16.0)!
+            barChartView.legend.enabled = false
+            barChartView.legend.horizontalAlignment = .right
+            barChartView.legend.verticalAlignment = .bottom
+            barChartView.legend.orientation = .horizontal
+            barChartView.highlighter = nil
+            barChartView.rightAxis.enabled = false
+            barChartView.animate(yAxisDuration: 2.5, easingOption: .easeInOutQuart)
+            barChartView.xAxis.enabled = false
+            
+            setChart(dataPoints: smiley, values: numbers)
+        }
+    }
 }

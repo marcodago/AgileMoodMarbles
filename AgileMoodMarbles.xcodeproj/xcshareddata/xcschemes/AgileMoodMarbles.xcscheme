@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "91E3987A1FA709BB0032E4CE"
-               BuildableName = "AgileMoodMarbles.app"
+               BuildableName = "ThinkDeskMoodMarbles.app"
                BlueprintName = "AgileMoodMarbles"
                ReferencedContainer = "container:AgileMoodMarbles.xcodeproj">
             </BuildableReference>
@@ -31,7 +31,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "91E3987A1FA709BB0032E4CE"
-            BuildableName = "AgileMoodMarbles.app"
+            BuildableName = "ThinkDeskMoodMarbles.app"
             BlueprintName = "AgileMoodMarbles"
             ReferencedContainer = "container:AgileMoodMarbles.xcodeproj">
          </BuildableReference>
@@ -54,7 +54,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "91E3987A1FA709BB0032E4CE"
-            BuildableName = "AgileMoodMarbles.app"
+            BuildableName = "ThinkDeskMoodMarbles.app"
             BlueprintName = "AgileMoodMarbles"
             ReferencedContainer = "container:AgileMoodMarbles.xcodeproj">
          </BuildableReference>
@@ -71,7 +71,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "91E3987A1FA709BB0032E4CE"
-            BuildableName = "AgileMoodMarbles.app"
+            BuildableName = "ThinkDeskMoodMarbles.app"
             BlueprintName = "AgileMoodMarbles"
             ReferencedContainer = "container:AgileMoodMarbles.xcodeproj">
          </BuildableReference>

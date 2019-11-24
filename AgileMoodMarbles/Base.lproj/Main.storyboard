@@ -10,7 +10,7 @@
         <!--TabController-->
         <scene sceneID="SiW-3x-TuD">
             <objects>
-                <tabBarController storyboardIdentifier="NaviVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="a1q-P5-7PY" userLabel="TabController" customClass="TabBarConfigurationViewController" customModule="AgileMoodMarbles" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="NaviVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="a1q-P5-7PY" userLabel="TabController" customClass="TabBarConfigurationViewController" customModule="ThinkDeskMoodMarbles" customModuleProvider="target" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="qHn-wB-x3E">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
@@ -31,7 +31,7 @@
         <!--SetMood-->
         <scene sceneID="hsH-gs-nQo">
             <objects>
-                <viewController id="NQ2-lR-IeB" userLabel="SetMood" customClass="MoodsViewController" customModule="AgileMoodMarbles" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="NQ2-lR-IeB" userLabel="SetMood" customClass="MoodsViewController" customModule="ThinkDeskMoodMarbles" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3ET-fL-JTA">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -114,14 +114,14 @@
         <!--CommentsTable-->
         <scene sceneID="lW1-Eb-iMU">
             <objects>
-                <tableViewController id="kjX-qN-I0I" userLabel="CommentsTable" customClass="CommentsTableViewController" customModule="AgileMoodMarbles" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="kjX-qN-I0I" userLabel="CommentsTable" customClass="CommentsTableViewController" customModule="ThinkDeskMoodMarbles" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" sectionIndexMinimumDisplayRowCount="1" allowsSelection="NO" rowHeight="45" sectionHeaderHeight="28" sectionFooterHeight="28" id="jb4-o9-CI9">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="sectionIndexColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="sectionIndexBackgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="myCell" id="Kf9-Rz-6ti" customClass="CustomTableViewCell" customModule="AgileMoodMarbles" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="myCell" id="Kf9-Rz-6ti" customClass="CustomTableViewCell" customModule="ThinkDeskMoodMarbles" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="1024" height="45"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Kf9-Rz-6ti" id="Wdn-R5-Fz7">
@@ -177,7 +177,7 @@
         <!--Metrics-->
         <scene sceneID="OxA-9a-OvT">
             <objects>
-                <viewController id="I23-GP-DCt" userLabel="Metrics" customClass="BarChartViewController" customModule="AgileMoodMarbles" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="I23-GP-DCt" userLabel="Metrics" customClass="BarChartViewController" customModule="ThinkDeskMoodMarbles" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleAspectFill" id="trw-Kp-9go">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -188,9 +188,12 @@
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pwc-wT-aTC" customClass="BarChartView" customModule="Charts">
+                            <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pwc-wT-aTC" customClass="BarChartView" customModule="Charts">
                                 <rect key="frame" x="150" y="184" width="724" height="434"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" notEnabled="YES"/>
+                                </accessibility>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -216,7 +219,7 @@
         <!--Settings-->
         <scene sceneID="rCK-qI-Fhd">
             <objects>
-                <viewController storyboardIdentifier="SettingsVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="gPv-II-KlC" customClass="SettingsViewController" customModule="AgileMoodMarbles" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SettingsVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="gPv-II-KlC" customClass="SettingsViewController" customModule="ThinkDeskMoodMarbles" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5yW-Ih-rZ6">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
